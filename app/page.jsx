@@ -10,7 +10,7 @@ import Footer from "../components/footer";
 
 export default function Home() {
   return (
-    <main className="dark:bg-gray-900">
+    <main className="dark:bg-[#030712] relative">
       <Header />
       <Hero />
       <AboutMe />
