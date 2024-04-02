@@ -54,6 +54,8 @@ import menu24L from "./icons/light/24/Name=icon-menu, Size=24, Theme Mode=Light.
 import phone24L from "./icons/light/24/Name=icon-phone, Size=24, Theme Mode=Light.png";
 import twitter24L from "./icons/light/24/Name=icon-twitter, Size=24, Theme Mode=Light.png";
 
+import heroMe from "./images/me.jpg";
+
 export default {
   close24D,
   copy24D,
@@ -107,4 +109,5 @@ export default {
   menu24L,
   phone24L,
   twitter24L,
+  heroMe,
 };

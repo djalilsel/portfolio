@@ -2,12 +2,8 @@
 import { useEffect, useState } from "react";
 import icons from "../assets";
 import Link from "next/link";
-import { Backdrop, Drawer } from "@mui/material";
 
-const Header = () => {
-  const [mode, setMode] = useState(
-    localStorage.getItem("color-theme") || "light"
-  );
+const Header = ({ mode, setMode }) => {
   const [menu, setMenu] = useState(false);
 
   const toggleDark = () => {
@@ -46,12 +42,19 @@ const Header = () => {
       localStorage.setItem("color-theme", "dark");
       setMode("dark");
     }
+    window.onscroll = () => {
+      if (window.scrollY > 0) {
+        document.querySelector(".header").classList.add("border-b");
+      } else {
+        document.querySelector(".header").classList.remove("border-b");
+      }
+    };
   }, []);
   return (
-    <div className="w-full p-[16px] xl:px-[250px] xl:py-[16px] h-[70px] flex justify-between items-center border-b border-gray-100 dark:border-gray-100/20 backdrop-filter backdrop-blur-md dark:text-gray-50 sticky top-0 left-0 z-30">
+    <div className="header w-full p-[16px] xl:px-[250px] xl:py-[16px] h-[70px] flex justify-between items-center border-gray-100 dark:border-gray-100/20 backdrop-filter backdrop-blur-md dark:text-gray-50 sticky top-0 left-0 z-30">
       <Link
         href={"/"}
-        className="text-gray-900 font-bold text-2xl xl:text-4xl dark:text-[#D1D5DB] cursor-pointer"
+        className="text-gray-900 font-bold text-2xl xl:text-4xl dark:text-[#f9fafb] cursor-pointer"
       >
         &lt;SS /&gt;
       </Link>
@@ -74,9 +77,9 @@ const Header = () => {
         <div className="flex items-center gap-10">
           <img
             src={
-              mode == "light" ? icons.darkmode32L.src : icons.darkmode32D.src
+              mode == "light" ? icons.darkmode32L.src : icons.lightmode32D.src
             }
-            className="w-9 h-9 text-white hover:bg-gray-100 rounded-md p-1 select-none"
+            className="w-9 h-9 text-white hover:bg-gray-100 active:bg-[#E5E7EB] dark:hover:bg-[#1F2937] dark:active:bg-[#374151] rounded-md p-1 select-none cursor-pointer"
             onClick={toggleDark}
           />
           <div
@@ -94,7 +97,7 @@ const Header = () => {
       />
       <div className="menu hidden absolute top-0 right-0 w-[70vw] bg-gray-50 z-40 h-screen dark:bg-[#030712]">
         <div className="h-[69px] flex justify-between items-center p-[16px]">
-          <div className="text-gray-900 font-bold text-2xl dark:text-[#D1D5DB] cursor-pointer">
+          <div className="text-gray-900 font-bold text-2xl dark:text-[#f9fafb] cursor-pointer">
             &lt;SS /&gt;
           </div>
           <img
@@ -143,16 +146,3 @@ const Header = () => {
 };
 
 export default Header;
-{
-  /* <Drawer
-        open={menu}
-        anchor="right"
-        onClose={toggleMenu}
-        PaperProps={{
-          sx: { width: "70%", backgroundColor: "black" },
-        }}
-        className="dark:bg-gray-900 dark:text-gray-50"
-      >
-        
-      </Drawer> */
-}
