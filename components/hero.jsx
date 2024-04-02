@@ -2,10 +2,10 @@ import icons from "../assets";
 
 function Hero({ mode }) {
   return (
-    <div className="h-[50vh] xl:px-[250px] xl:py-[96px] dark:bg- dark:text-gray-50 flex">
-      <div className="flex-1 flex flex-col gap-[48px]">
-        <div className="flex flex-col gap-[8px]">
-          <div className="text-[#030712] dark:text-[#f9fafb] text-[60px] font-bold">
+    <div className="xl:h-[50vh] h-screen py-[64px] px-[16px] xl:px-[250px] xl:py-[96px] dark:text-gray-50 flex xl:flex-row flex-col-reverse">
+      <div className="flex-1 flex flex-col gap-[30px] xl:gap-[48px]">
+        <div className="flex flex-col xl:gap-[8px]">
+          <div className="text-[#030712] dark:text-[#f9fafb] text-[36px] xl:text-[60px] font-semibold xl:font-bold">
             Hi, I'm Abd eldjalil 👋
           </div>
           <div className="text-[16px] text-[#4B5563] dark:text-[#D1D5DB]">
@@ -15,7 +15,7 @@ function Hero({ mode }) {
             responsive.
           </div>
         </div>
-        <div className="flex flex-col text-[16px] text-[#4B5563] dark:text-[#D1D5DB]">
+        <div className="flex flex-col gap-[8px] text-[16px] text-[#4B5563] dark:text-[#D1D5DB]">
           <div className="flex items-center gap-4">
             <img
               src={
@@ -41,10 +41,10 @@ function Hero({ mode }) {
         </div>
       </div>
       <div className="flex-1 relative">
-        <div className="bg-gray-300 dark:bg-[#374151] w-[280px] h-[280px] absolute top-10 left-60"></div>
+        <div className="bg-gray-300 dark:bg-[#374151] w-[300px] h-[280px] absolute top-10 left-[40px] xl:left-60"></div>
         <img
           src={icons.heroMe.src}
-          className="w-[280px] border-8 border-[#f9fafb] dark:border-[#030712] absolute top-0 left-52"
+          className="w-[280px]  border-8 border-white dark:border-[#030712] absolute top-0 left-[50px] xl:left-52"
         />
       </div>
     </div>
