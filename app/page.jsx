@@ -8,10 +8,15 @@ import Work from "../components/work";
 import Testimonials from "../components/testimonials";
 import GetInTouch from "../components/getInTouch";
 import Footer from "../components/footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [mode, setMode] = useState(localStorage?.getItem("mode") || "light");
+  const [mode, setMode] = useState();
+  useEffect(() => {
+    if (localStorage.getItem("mode")) {
+      setMode(localStorage.getItem("mode"));
+    }
+  }, []);
   return (
     <main className="dark:bg-[#030712] relative">
       <Header mode={mode} setMode={setMode} />

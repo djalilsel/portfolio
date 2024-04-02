@@ -2,8 +2,8 @@ import icons from "../assets";
 
 function AboutMe() {
   return (
-    <div className="h-screen bg-[#f9fafb] xl:px-[250px] xl:py-[96px] flex flex-col items-center gap-[48px] ">
-      <div className="bg-[#E5E7EB] px-[20px] py-[4px] rounded-[12px] body3-medium text-[#4B5563]">
+    <div className="h-screen bg-[#f9fafb] dark:bg-[#111827] xl:px-[250px] xl:py-[96px] flex flex-col items-center gap-[48px] ">
+      <div className="bg-[#E5E7EB] dark:bg-[#374151] px-[20px] py-[4px] rounded-[12px] body3-medium text-[#4B5563] dark:text-[#D1D5DB]">
         About me
       </div>
       <div className="flex w-full">
@@ -11,14 +11,14 @@ function AboutMe() {
           <div className="bg-gray-300 dark:bg-[#374151] w-[350px] h-[350px] absolute top-10 left-0"></div>
           <img
             src={icons.heroMe.src}
-            className="w-[350px] border-8 border-[#f9fafb] dark:border-[#030712] absolute top-0 xl:left-14"
+            className="w-[350px] border-8 border-[#f9fafb] dark:border-[#111827] absolute top-0 xl:left-14"
           />
         </div>
         <div className="flex-1 flex flex-col gap-[24px]">
-          <div className="h3-desk-semi text-[#111827]">
+          <div className="h3-desk-semi text-[#111827] dark:text-[#F9FAFB]">
             Curious about me? Here you have it:
           </div>
-          <div className="body2 flex flex-col gap-[16px] text-[#4B5563]">
+          <div className="body2 flex flex-col gap-[16px] text-[#4B5563] dark:text-[#D1D5DB]">
             <div>
               I'm a passionate, self-proclaimed web developer who specializes in
               full stack development (React.js & Node.js). I am enthusiastic
