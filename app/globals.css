@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .h1-desk {
+    @apply text-[60px] leading-[72px] tracking-[-2%] font-bold;
+  }
+  .h1-tablet {
+    @apply text-[48px] leading-[48px] tracking-[-2%] font-bold;
+  }
+  .h1-phone {
+    @apply text-[36px] leading-[40px] font-semibold;
+  }
+  .h2-desk {
+    @apply text-[36px] leading-[40px] tracking-[-2%] font-semibold;
+  }
+  .h2-tabone {
+    @apply text-[18px] leading-[28px] tracking-[-2%] font-semibold;
+  }
+  .h3-desk-bold {
+    @apply text-[30px] leading-[36px] tracking-[-2%] font-bold;
+  }
+  .h3-tabone-bold {
+    @apply text-[24px] leading-[32px] tracking-[-2%] font-bold;
+  }
+  .h3-desk-semi {
+    @apply text-[30px] leading-[36px] tracking-[-2%] font-semibold;
+  }
+  .h3-tabone-semi {
+    @apply text-[24px] leading-[32px] tracking-[-2%] font-semibold;
+  }
+  .subtitle {
+    @apply text-[20px] leading-[28px] font-normal;
+  }
+  .subtitle-tabone {
+    @apply text-[18px] leading-[28px] font-normal;
+  }
+  .subtitle-semi {
+    @apply text-[20px] leading-[28px] font-semibold;
+  }
+  .subtitle-tabone-semi {
+    @apply text-[18px] leading-[28px] font-semibold;
+  }
+  .body1 {
+    @apply text-[18px] leading-[28px] font-normal;
+  }
+  .body1-tabone {
+    @apply text-[16px] leading-[24px] font-normal;
+  }
+  .body2 {
+    @apply text-[16px] leading-[24px] font-normal;
+  }
+  .body2-underline {
+    @apply text-[16px] leading-[24px] font-normal underline underline-offset-2;
+  }
+  .body2-medium {
+    @apply text-[16px] leading-[24px] font-medium;
+  }
+  .body2-semibold {
+    @apply text-[16px] leading-[24px] font-semibold;
+  }
+  .body3 {
+    @apply text-[14px] leading-[20px] font-normal;
+  }
+  .body3-medium {
+    @apply text-[14px] leading-[20px] font-medium;
+  }
+}

@@ -11,9 +11,7 @@ import Footer from "../components/footer";
 import { useState } from "react";
 
 export default function Home() {
-  const [mode, setMode] = useState(
-    localStorage.getItem("color-theme") || "light"
-  );
+  const [mode, setMode] = useState(localStorage?.getItem("mode") || "light");
   return (
     <main className="dark:bg-[#030712] relative">
       <Header mode={mode} setMode={setMode} />

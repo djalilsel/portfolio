@@ -2,20 +2,20 @@ import icons from "../assets";
 
 function Hero({ mode }) {
   return (
-    <div className="xl:h-[50vh] h-screen py-[64px] px-[16px] xl:px-[250px] xl:py-[96px] dark:text-gray-50 flex xl:flex-row flex-col-reverse">
-      <div className="flex-1 flex flex-col gap-[30px] xl:gap-[48px]">
+    <div className="xl:h-full h-screen py-[64px] px-[16px] xl:px-[250px] xl:py-[96px] dark:text-gray-50 flex xl:flex-row flex-col-reverse">
+      <div className="flex-1 flex flex-col gap-[30px] h1-phone xl:gap-[48px]">
         <div className="flex flex-col xl:gap-[8px]">
-          <div className="text-[#030712] dark:text-[#f9fafb] text-[36px] xl:text-[60px] font-semibold xl:font-bold">
+          <div className="text-[#030712] dark:text-[#f9fafb]  xl:h1-desk">
             Hi, I'm Abd eldjalil 👋
           </div>
-          <div className="text-[16px] text-[#4B5563] dark:text-[#D1D5DB]">
+          <div className="body2 text-[#4B5563] dark:text-[#D1D5DB]">
             I'm a full stack developer (React.js & Node.js) with a focus on
             creating (and occasionally designing) exceptional digital
             experiences that are fast, accessible, visually appealing, and
             responsive.
           </div>
         </div>
-        <div className="flex flex-col gap-[8px] text-[16px] text-[#4B5563] dark:text-[#D1D5DB]">
+        <div className="flex flex-col gap-[8px] body2 text-[#4B5563] dark:text-[#D1D5DB]">
           <div className="flex items-center gap-4">
             <img
               src={

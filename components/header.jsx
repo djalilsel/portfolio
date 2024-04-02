@@ -59,7 +59,7 @@ const Header = ({ mode, setMode }) => {
         &lt;SS /&gt;
       </Link>
       <div className="hidden xl:flex gap-10 items-center">
-        <ul className="flex items-center gap-10 text-gray-600 text-lg font-medium dark:text-[#D1D5DB]">
+        <ul className="flex items-center gap-10 text-gray-600 body2-medium dark:text-[#D1D5DB]">
           <li className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-50">
             About
           </li>
@@ -84,7 +84,7 @@ const Header = ({ mode, setMode }) => {
           />
           <div
             onClick={() => window?.open("/abdeldjalil.pdf", "_blank")}
-            className="bg-gray-900 px-[16px] py-[6px] text-gray-50 dark:text-gray-900 dark:bg-gray-50 hover:bg-gray-700 active:bg-gray-800 dark:hover:bg-gray-200 dark:active:bg-gray-100 rounded-xl cursor-pointer"
+            className="bg-gray-900 px-[16px] py-[6px] body2-medium text-gray-50 dark:text-gray-900 dark:bg-gray-50 hover:bg-gray-700 active:bg-gray-800 dark:hover:bg-gray-200 dark:active:bg-gray-100 rounded-xl cursor-pointer"
           >
             Download CV
           </div>
@@ -106,7 +106,7 @@ const Header = ({ mode, setMode }) => {
             onClick={toggleMenu}
           />
         </div>
-        <ul className="flex flex-col gap-5 text-gray-600 text-base font-medium dark:text-[#D1D5DB] p-[16px] border-y border-gray-100 dark:border-gray-100/20">
+        <ul className="flex flex-col gap-5 text-gray-600 body2-medium dark:text-[#D1D5DB] p-[16px] border-y border-gray-100 dark:border-gray-100/20">
           <li className="cursor-pointer dark:hover:text-gray-50">About</li>
           <li className="cursor-pointer dark:hover:text-gray-50">Work</li>
           <li className="cursor-pointer dark:hover:text-gray-50">
@@ -115,7 +115,7 @@ const Header = ({ mode, setMode }) => {
           <li className="cursor-pointer dark:hover:text-gray-50">Contact</li>
         </ul>
         <div className="flex justify-between p-[16px]">
-          <span>Switch mode</span>
+          <span className="body2">Switch mode</span>
           {mode == "light" && (
             <img
               src={icons.darkmode24L.src}
@@ -136,7 +136,7 @@ const Header = ({ mode, setMode }) => {
           className="bg-gray-900 p-[6px] text-gray-50
           dark:text-gray-900 dark:bg-gray-50 
           active:bg-gray-800  dark:active:bg-gray-100 
-          rounded-xl mx-[16px] text-base text-center"
+          rounded-xl mx-[16px] body2-medium cursor-pointer text-center"
         >
           Download CV
         </div>
