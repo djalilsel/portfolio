@@ -56,6 +56,21 @@ import twitter24L from "./icons/light/24/Name=icon-twitter, Size=24, Theme Mode=
 
 import heroMe from "./images/me.jpg";
 
+import react from "./skills/react.svg";
+import express from "./skills/express.svg";
+import expressDark from "./skills/express-dark.svg";
+import figma from "./skills/figma.svg";
+import git from "./skills/git.svg";
+import javascript from "./skills/javascript.svg";
+import mongodb from "./skills/mongodb.svg";
+import nextjs from "./skills/nextjs.svg";
+import nodejs from "./skills/react.svg";
+import tailwindcss from "./skills/tailwindcss.svg";
+import firebase from "./skills/firebase.svg";
+import mysql from "./skills/mysql.png";
+import html from "./skills/html.svg";
+import css from "./skills/css.svg";
+
 export default {
   close24D,
   copy24D,
@@ -110,4 +125,18 @@ export default {
   phone24L,
   twitter24L,
   heroMe,
+  react,
+  express,
+  expressDark,
+  figma,
+  git,
+  javascript,
+  mongodb,
+  nextjs,
+  nodejs,
+  tailwindcss,
+  firebase,
+  mysql,
+  html,
+  css,
 };

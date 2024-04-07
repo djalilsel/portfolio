@@ -2,7 +2,7 @@ import icons from "../assets";
 
 function Hero({ mode }) {
   return (
-    <div className="xl:h-full h-screen py-[64px] px-[16px] xl:px-[250px] xl:py-[96px] dark:text-gray-50 flex xl:flex-row flex-col-reverse">
+    <div className="xl:h-full h-[90vh] py-[64px] px-[16px] xl:px-[250px] xl:py-[120px] dark:text-gray-50 flex xl:flex-row flex-col-reverse gap-20 xl:gap-0">
       <div className="flex-1 flex flex-col gap-[30px] h1-phone xl:gap-[48px]">
         <div className="flex flex-col xl:gap-[8px]">
           <div className="text-[#030712] dark:text-[#f9fafb]  xl:h1-desk">
@@ -40,12 +40,13 @@ function Hero({ mode }) {
           />
         </div>
       </div>
-      <div className="flex-1 relative">
-        <div className="bg-gray-300 dark:bg-[#374151] w-[300px] h-[280px] absolute top-10 left-[40px] xl:left-60"></div>
-        <img
-          src={icons.heroMe.src}
-          className="w-[280px]  border-8 border-white dark:border-[#030712] absolute top-0 left-[50px] xl:left-52"
-        />
+      <div className="flex-1 relative flex justify-center items-center">
+        <div className="bg-gray-300 dark:bg-[#374151] w-[320px] xl:w-[280px] h-[280px] flex justify-center relative">
+          <img
+            src={icons.heroMe.src}
+            className="w-[280px] border-8 border-white dark:border-[#030712] absolute xl:right-10 xl:bottom-10 bottom-10"
+          />
+        </div>
       </div>
     </div>
   );

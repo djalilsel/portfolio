@@ -56,7 +56,7 @@ const Header = ({ mode, setMode }) => {
         href={"/"}
         className="text-gray-900 font-bold text-2xl xl:text-4xl dark:text-[#f9fafb] cursor-pointer"
       >
-        &lt;SS /&gt;
+        &lt;SA /&gt;
       </Link>
       <div className="hidden xl:flex gap-10 items-center">
         <ul className="flex items-center gap-10 text-gray-600 body2-medium dark:text-[#D1D5DB]">
@@ -98,7 +98,7 @@ const Header = ({ mode, setMode }) => {
       <div className="menu hidden absolute top-0 right-0 w-[70vw] bg-gray-50 z-40 h-screen dark:bg-[#030712]">
         <div className="h-[69px] flex justify-between items-center p-[16px]">
           <div className="text-gray-900 font-bold text-2xl dark:text-[#f9fafb] cursor-pointer">
-            &lt;SS /&gt;
+            &lt;SA /&gt;
           </div>
           <img
             src={mode == "dark" ? icons.close24D.src : icons.close24L.src}

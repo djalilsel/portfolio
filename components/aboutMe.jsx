@@ -1,19 +1,20 @@
 import icons from "../assets";
+import Tag from "@/components/Tag";
 
 function AboutMe() {
   return (
-    <div className="h-screen bg-[#f9fafb] dark:bg-[#111827] xl:px-[250px] xl:py-[96px] flex flex-col items-center gap-[48px] ">
-      <div className="bg-[#E5E7EB] dark:bg-[#374151] px-[20px] py-[4px] rounded-[12px] body3-medium text-[#4B5563] dark:text-[#D1D5DB]">
-        About me
-      </div>
-      <div className="flex w-full">
-        <div className="flex-1 relative">
-          <div className="bg-gray-300 dark:bg-[#374151] w-[350px] h-[350px] absolute top-10 left-0"></div>
-          <img
-            src={icons.heroMe.src}
-            className="w-[350px] border-8 border-[#f9fafb] dark:border-[#111827] absolute top-0 xl:left-14"
-          />
+    <div className="xl:h-screen bg-[#f9fafb] dark:bg-[#111827] px-[16px] py-[64px] xl:px-[250px] xl:py-[96px] flex flex-col items-center gap-[60px] xl:gap-[48px]  ">
+      <Tag text="About Me" />
+      <div className="flex flex-col xl:flex-row flex-1 w-full gap-8 xl:gap-0">
+        <div className="flex-1 relative flex justify-center xl:justify-normal items-center">
+          <div className="bg-gray-300 dark:bg-[#374151] w-[340px] h-[300px] flex justify-center relative">
+            <img
+              src={icons.heroMe.src}
+              className="w-[300px] border-8 border-[#f9fafb] dark:border-[#111827] absolute xl:left-10 xl:bottom-10 bottom-10"
+            />
+          </div>
         </div>
+
         <div className="flex-1 flex flex-col gap-[24px]">
           <div className="h3-desk-semi text-[#111827] dark:text-[#F9FAFB]">
             Curious about me? Here you have it:
@@ -30,10 +31,9 @@ function AboutMe() {
               I began my journey as a web developer in 2021, and since then,
               I've continued to grow and evolve as a developer, taking on new
               challenges and learning the latest technologies along the way.
-              Now, in my early twenties, 3 years after starting my web
-              development journey, I'm building cutting-edge web applications
-              using modern technologies such as Next.js, MaterialUI,
-              Tailwindcss, Supabase and much more.
+              Now, 3 years after starting my web development journey, I'm
+              building cutting-edge web applications using modern technologies
+              such as Next.js, MaterialUI, Tailwindcss, Supabase and much more.
             </div>
             <div>
               I am very much a progressive thinker and enjoy working on products
@@ -62,7 +62,7 @@ function AboutMe() {
               .
             </div>
             <div>Finally, some quick bits about me.</div>
-            <ul className="grid grid-cols-2 gap-2 list-disc list-inside">
+            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-2 list-disc list-inside">
               <li>Second year engineering student</li>
               <li>Passionate learner</li>
               <li>Team player</li>
